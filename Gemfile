@@ -29,6 +29,8 @@ gem 'bootstrap', '~> 4.0.0'
 
 gem 'friendly_id', '~> 5.4.0'
 
+gem 'mini_racer'
+
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
   gem 'rails_12factor'
@@ -48,6 +50,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.7'
 end
 
 group :development do
