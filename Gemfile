@@ -31,6 +31,8 @@ gem 'friendly_id', '~> 5.4.0'
 
 gem 'mini_racer'
 
+gem 'devise'
+
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
   gem 'rails_12factor'
