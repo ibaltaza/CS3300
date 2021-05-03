@@ -13,8 +13,8 @@ script:
 
  deploy:
  provider: heroku
- api_key: YOUT_ACCOUNT_API_HERE
- app: YOUR_APP_NAME_HERE
+ api_key: 6ad2b6ab-9f75-4c5e-b209-803c129a0a65
+ app: mighty-fjord-73466
  run: "rake db:migrate"
  on:
   all_branches: true
