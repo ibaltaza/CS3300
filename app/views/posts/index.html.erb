@@ -1,23 +1,21 @@
 <% provide(:page_title, 'All Posts') %>
 
+
 <p id="notice"><%= notice %></p>
-
 <h1>Posts</h1>
-
-<table>
-  <thead>
+<table class="table table-striped table-hover">
+  <thead class ="table-dark text-center">
     <tr>
-      <th>Title</th>
+      <th>Project Title</th>
       <th>Date</th>
       <th>Language</th>
       <th>Code</th>
       <th>About</th>
-      <th>Slug</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
-  <tbody>
+  <tbody class="text-center">
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
@@ -25,10 +23,9 @@
         <td><%= post.language %></td>
         <td><%= post.code %></td>
         <td><%= post.about %></td>
-        <td><%= post.slug %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
